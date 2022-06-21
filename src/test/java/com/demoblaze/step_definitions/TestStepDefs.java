@@ -12,7 +12,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestStepDefs {
+
     ProductPage productPage = new ProductPage();
+
     @Given("buyer is on the homepage of demoblaze")
     public void buyer_is_on_the_homepage_of_demoblaze() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
